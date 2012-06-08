@@ -4,3 +4,13 @@
 *.jar
 *.war
 *.ear
+
+# target dirs
+target
+
+# idea dirs and files
+.idea
+*.iml
+*.ipr
+
+
