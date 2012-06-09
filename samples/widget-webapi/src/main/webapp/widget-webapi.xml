@@ -10,7 +10,7 @@
                      com.rooxteam.webapi.socialApplication.getAll().execute(function(data) {
                         if (data.result) {
                             gadgets.log(data.result);
-                        } else if (data.error && data.error.code) {
+                        } else if (data.error &amp;&amp; data.error.code) {
                             gadgets.error("get news :" + data.error.message);
                             alert("get news :" + data.error.message);
                         } else {
