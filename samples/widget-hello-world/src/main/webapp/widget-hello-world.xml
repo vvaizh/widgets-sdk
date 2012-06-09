@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Module>
+    <ModulePrefs author="RooX Solutions" author_email="support@roox.ru" height="100%" title="Messages" version="1.0-SNAPSHOT" width="100%">
+    </ModulePrefs>
+    <Content content-type="text/html" type="html">
+        <![CDATA[
+            <script language="javascript" type="text/javascript">
+                gadgets.util.registerOnLoadHandler(function(){
+                     alert('Наш виджет загрузился!');
+                });
+            </script>
+        ]]>
+    </Content>
+</Module>

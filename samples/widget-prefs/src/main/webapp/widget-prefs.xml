@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Module>
+    <ModulePrefs author="RooX Solutions" author_email="support@roox.ru" height="100%" title="Messages" version="1.0-SNAPSHOT" width="100%">
+        <UserPref name="portalBaseUrl" datatype="hidden"/>
+        <UserPref name="view" datatype="enum">
+           <EnumValue display_value="Web large view" value="services"/>
+           <EnumValue display_value="Web small view" value=""/>
+        </UserPref>
+    </ModulePrefs>
+    <Content content-type="text/html" type="html">
+        <![CDATA[
+            <script language="javascript" type="text/javascript">
+                var mid=__MODULE_ID__;  
+				gadgets.log('ID Виджета: ' + mid);
+				gadgets.log('Prefs параметр portalBaseUrl равен: ' + new gadgets.Prefs(mid).getString("portalBaseUrl"));
+            </script>
+        ]]>
+    </Content>
+</Module>
