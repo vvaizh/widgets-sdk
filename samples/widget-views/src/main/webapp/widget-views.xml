@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Module>
+    <ModulePrefs author="RooX Solutions" author_email="support@roox.ru" height="100%" title="Messages"
+                 version="1.0-SNAPSHOT" width="100%">
+        <Require feature="views"/>
+    </ModulePrefs>
+     <Content type="html" view="home">
+    <![CDATA[
+      Hello, small world!
+    ]]>
+  </Content>
+  <Content type="html" view="canvas">
+    <![CDATA[
+      Hello, big world!
+    ]]>
+  </Content>
+</Module>
