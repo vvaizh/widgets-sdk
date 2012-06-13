@@ -10,9 +10,11 @@
     <Content content-type="text/html" type="html">
         <![CDATA[
             <script language="javascript" type="text/javascript">
-                var mid=__MODULE_ID__;  
-				gadgets.log('ID Виджета: ' + mid);
-				gadgets.log('Prefs параметр portalBaseUrl равен: ' + new gadgets.Prefs(mid).getString("portalBaseUrl"));
+                gadgets.util.registerOnLoadHandler(function(){
+                    var mid=__MODULE_ID__;
+                    gadgets.log('ID Виджета: ' + mid);
+                    gadgets.log('Prefs параметр portalBaseUrl равен: ' + new gadgets.Prefs(mid).getString("portalBaseUrl"));
+                });
             </script>
         ]]>
     </Content>
