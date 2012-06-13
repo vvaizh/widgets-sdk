@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
     <packaging>war</packaging>
@@ -78,28 +79,29 @@
 
     <pluginRepositories>
         <pluginRepository>
-            <id>roox-releases</id>
-            <name>roox-releases</name>
-            <url>http://nexus.rooxintra.net/content/repositories/releases</url>
+            <id>roox-solutions</id>
+            <name>RooX Solutions Repository</name>
+            <url>http://repo.rooxteam.com/mvn-yota</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
         </pluginRepository>
     </pluginRepositories>
 
     <repositories>
         <repository>
-            <id>roox-releases</id>
-            <name>roox-releases</name>
-            <url>http://nexus.rooxintra.net/content/repositories/releases</url>
+            <id>roox-solutions</id>
+            <name>RooX Solutions Repository</name>
+            <url>http://repo.rooxteam.com/mvn-yota</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
         </repository>
-        <!--<repository>-->
-        <!--<id>roox-solutions</id>-->
-        <!--<name>RooX Solutions Repository</name>-->
-        <!--<url>http://repo.rooxteam.com/mvn-yota</url>-->
-        <!--<layout>default</layout>-->
-        <!--<releases>-->
-        <!--<enabled>true</enabled>-->
-        <!--<updatePolicy>always</updatePolicy>-->
-        <!--<checksumPolicy>ignore</checksumPolicy>-->
-        <!--</releases>-->
-        <!--</repository>-->
     </repositories>
 </project>
