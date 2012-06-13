@@ -76,17 +76,30 @@
         </plugins>
     </build>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>roox-releases</id>
+            <name>roox-releases</name>
+            <url>http://nexus.rooxintra.net/content/repositories/releases</url>
+        </pluginRepository>
+    </pluginRepositories>
+
     <repositories>
-		<repository>
-			<id>roox-solutions</id>
-			<name>RooX Solutions Repository</name>
-			<url>http://repo.rooxteam.com/mvn-yota</url>
-			<layout>default</layout>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-				<checksumPolicy>ignore</checksumPolicy>
-			</releases>
-		</repository>
+        <repository>
+            <id>roox-releases</id>
+            <name>roox-releases</name>
+            <url>http://nexus.rooxintra.net/content/repositories/releases</url>
+        </repository>
+        <!--<repository>-->
+			<!--<id>roox-solutions</id>-->
+			<!--<name>RooX Solutions Repository</name>-->
+			<!--<url>http://repo.rooxteam.com/mvn-yota</url>-->
+			<!--<layout>default</layout>-->
+			<!--<releases>-->
+				<!--<enabled>true</enabled>-->
+				<!--<updatePolicy>always</updatePolicy>-->
+				<!--<checksumPolicy>ignore</checksumPolicy>-->
+			<!--</releases>-->
+		<!--</repository>-->
     </repositories>
 </project>

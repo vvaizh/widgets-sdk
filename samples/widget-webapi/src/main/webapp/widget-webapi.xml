@@ -7,7 +7,7 @@
         <![CDATA[
             <script language="javascript" type="text/javascript">
                 gadgets.util.registerOnLoadHandler(function(){
-                     com.rooxteam.webapi.socialApplication.getAll().execute(function(data) {
+                     com.rooxteam.webapi.news.get().execute(function(data) {
                         if (data.result) {
                             gadgets.log(data.result);
                         } else if (data.error &amp;&amp; data.error.code) {

@@ -4,14 +4,14 @@
                  version="1.0-SNAPSHOT" width="100%">
         <Require feature="views"/>
     </ModulePrefs>
-     <Content type="html" view="home">
-    <![CDATA[
-      Hello, small world!
-    ]]>
-  </Content>
-  <Content type="html" view="canvas">
-    <![CDATA[
-      Hello, big world!
-    ]]>
-  </Content>
+    <Content type="html" view="home">
+        <![CDATA[
+            Hello, small world!
+        ]]>
+    </Content>
+    <Content type="html" view="canvas">
+        <![CDATA[
+            Hello, big world!
+        ]]>
+    </Content>
 </Module>
