@@ -19,7 +19,7 @@
             <plugin>
                 <groupId>com.rooxteam.wms.sdk</groupId>
                 <artifactId>opensocial-maven-plugin</artifactId>
-                <version>1.3</version>
+                <version>1.5</version>
                 <executions>
                     <execution>
                         <id>production</id>
