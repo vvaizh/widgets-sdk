@@ -9,13 +9,13 @@
                 gadgets.util.registerOnLoadHandler(function(){
                      com.rooxteam.webapi.news.get().execute(function(data) {
                         if (data.result) {
-                            gadgets.log(data.result);
+                            var news = data.result;
+                            gadgets.log('Количество новостей: ' + news.length);
+                            gadgets.log(news);
                         } else if (data.error &amp;&amp; data.error.code) {
                             gadgets.error("get news :" + data.error.message);
-                            alert("get news :" + data.error.message);
                         } else {
                             gadgets.error("Unknown error");
-                            alert("Unknown error");
                         }
                     });
                 });

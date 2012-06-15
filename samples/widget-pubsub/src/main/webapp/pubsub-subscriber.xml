@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Module>
+    <ModulePrefs author="RooX Solutions" author_email="support@roox.ru" height="50%" title="Messages" version="1.0-SNAPSHOT" width="50%">
+        <Require feature="pubsub-2"/>
+    </ModulePrefs>
+    <Content type="html">
+        <![CDATA[
+            <script>
+                gadgets.util.registerOnLoadHandler( function() {
+                    gadgets.pubsub.subscribe("my_event_type", function (sender, message){
+                        alert(message.content);
+                    });
+                });
+            </script>
+        ]]>
+    </Content>
+</Module>
