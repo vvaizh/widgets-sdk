@@ -9,7 +9,7 @@
                 <render:import url="templates/1.html" onError="skip"/>
 				
 				
-				<render:import url="templates/2.html" onError="print_error"/>
+		<render:import url="templates/2.html" onError="print_error"/>
 				
 				
 				
