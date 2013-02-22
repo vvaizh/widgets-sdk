@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Module>
     <ModulePrefs author="RooX Solutions" author_email="support@roox.ru" height="100%"
-                 title="Widget Wrapper Modifications" version="1.0-SNAPSHOT" width="100%">
+                 title="Widget Wrapper Modifications - In Div With Attributes" version="1.0-SNAPSHOT" width="100%">
         <Require feature="com.rooxteam.container">
             <Param name="wrapper-tag">div</Param>
             <Param name="wrapper-tag-attribute">id="some"</Param>
