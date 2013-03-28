@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Module>
+    <ModulePrefs author="RooX Solutions" author_email="support@roox.ru" height="100%" title="Server Side Includes" version="1.0-SNAPSHOT" width="100%">
+    </ModulePrefs>
+    <Content content-type="text/html" type="html">
+        <![CDATA[
+
+
+
+				
+				
+		<render:widget author="RooX Solutions" name="Newsss" onError="print_error"/>
+				
+				
+
+		<render:widget author="RooX Solutions" name="Slider" onError="print_error"/>
+				
+        ]]>
+    </Content>
+
+
+
+</Module>
