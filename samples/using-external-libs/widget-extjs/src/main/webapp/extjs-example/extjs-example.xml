@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Module>
+    <ModulePrefs author="RooX Solutions" author_email="support@roox.ru" height="100%" title="Using jQuery" version="1.0-SNAPSHOT" width="100%">
+    	<Require feature="org.jquery.core-1.7.2"/>
+    </ModulePrefs>
+    <Content content-type="text/html" type="html">
+        <![CDATA[
+
+        	<link rel="stylesheet" type="text/css" href="http://cdn.sencha.io/try/extjs/4.1.1/resources/css/ext-all.css" />
+
+        	<style>
+        		 body {
+        		 	margin: 20px;
+        		 }
+        		 h2 {
+        		 	margin-bottom: 20px;
+        		 }
+    		</style>
+		    <script type="text/javascript" src="http://cdn.sencha.io/try/extjs/4.1.1/ext-all.js"></script>
+		    
+		    <script type="text/javascript">
+			 
+				gadgets.util.registerOnLoadHandler(function(){
+
+					Ext.onReady(function() {
+					 	var bd = Ext.getBody();
+
+					    bd.createChild({tag: 'h2', html: 'This is Hello World by RooX Widget using ExtJs (Sencha)'});
+
+
+					    var simple = Ext.create('Ext.form.Panel', {
+					        url:'save-form.php',
+					        frame:true,
+					        title: 'Simple Form',
+					        bodyStyle:'padding:5px 5px 0',
+					        width: 350,
+					        fieldDefaults: {
+					            msgTarget: 'side',
+					            labelWidth: 75
+					        },
+					        defaultType: 'textfield',
+					        defaults: {
+					            anchor: '100%'
+					        },
+
+					        items: [{
+					            fieldLabel: 'First Name',
+					            name: 'first',
+					            allowBlank:false
+					        },{
+					            fieldLabel: 'Last Name',
+					            name: 'last'
+					        },{
+					            fieldLabel: 'Company',
+					            name: 'company'
+					        }, {
+					            fieldLabel: 'Email',
+					            name: 'email',
+					            vtype:'email'
+					        }, {
+					            xtype: 'timefield',
+					            fieldLabel: 'Time',
+					            name: 'time',
+					            minValue: '8:00am',
+					            maxValue: '6:00pm'
+					        }],
+
+					        buttons: [{
+					            text: 'Save'
+					        },{
+					            text: 'Cancel'
+					        }]
+					    });
+
+					    simple.render(document.body);
+					});
+				});
+			 
+			</script>
+			 
+        ]]>
+    </Content>
+
+
+
+</Module>
