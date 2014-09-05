@@ -1,0 +1,9 @@
+.mmlib_table {
+  width: 100%;
+  font: bold 9px arial,sans-serif;
+  font-size: medium;
+  background-color: #fff4c2;
+  border-collapse: separate;
+  border-spacing: 3px;
+  padding: 1px 0px;
+}
