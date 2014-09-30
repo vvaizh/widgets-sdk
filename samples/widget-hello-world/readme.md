@@ -18,6 +18,10 @@ Usage
 1.  Provide widget URL as argument to widget rendering system in browser
 2.  Alert box should appear
 
+Path to widget
+---------------------
+`src/main/webapp/widget-hello-world.xml`
+
 Troubleshooting
 ---------------------
 1. Check widget rendering system availability and IsAlives (if applicable) 
