@@ -18,7 +18,7 @@ Uses miniMessage feature to display text
 Usage
 ---------------------
 1.  Provide widget URL as argument to widget rendering system in browser
-2.  Messages should be displayed
+2.  Messages  from `welcome.js` should be displayed
 
 Path to widget
 ---------------------
