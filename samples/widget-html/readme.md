@@ -3,20 +3,22 @@ Widget html
 
 Description
 ---------------------
-External HTML css and JS using widget.
+External HTML css and JS using widget with miniMessage feature.
 
 Purpose
 ---------------------
 Show including external resources into widget
+Show miniMessage feature usage
 
 Behavior
 ---------------------
-Shows content included into external resources (welcome.html,welcome.js,welcome.css)
+Loads content included into external resources (welcome.html,welcome.js,welcome.css)
+Uses miniMessage feature to display text
 
 Usage
 ---------------------
 1.  Provide widget URL as argument to widget rendering system in browser
-2.  External content should be displayed
+2.  Messages should be displayed
 
 Path to widget
 ---------------------
