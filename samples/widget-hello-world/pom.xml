@@ -18,7 +18,7 @@
             <plugin>
                 <groupId>com.rooxteam.wms.sdk</groupId>
                 <artifactId>opensocial-maven-plugin</artifactId>
-                <version>1.5</version>
+                <version>1.19-29</version>
                 <executions>
                     <execution>
                         <id>production</id>
