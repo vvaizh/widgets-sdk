@@ -20,9 +20,9 @@ Usage
 
 Path to widget
 ---------------------
-`widget-angularjs/src/main/webapp/angularjs-example/angularjs-example.xml`
-`widget-dojo/src/main/webapp/dojo-example/dojo-example.xml`
-`widget-jquery/src/main/webapp/jquery-example/jquery-example.xml`
+`widget-angularjs/src/main/webapp/angularjs-example/angularjs-example.xml`  
+`widget-dojo/src/main/webapp/dojo-example/dojo-example.xml`  
+`widget-jquery/src/main/webapp/jquery-example/jquery-example.xml`  
 
 Troubleshooting
 ---------------------
