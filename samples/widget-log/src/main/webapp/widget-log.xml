@@ -7,7 +7,9 @@
         <![CDATA[
             <script language="javascript" type="text/javascript">
                 gadgets.util.registerOnLoadHandler(function(){
-                     gadgets.setLogLevel(1);
+                     //повышаем уровень логирования
+                     sessionStorage.setItem('com.roox.cm.Common.App.Properties.unit.IsLogEnabled', true);
+
                      gadgets.log('Наш виджет начал работать.');
 					 gadgets.error('Что-то пошло не так - ошибка!')
                 });
