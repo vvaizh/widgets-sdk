@@ -17,7 +17,7 @@ Usage
 ---------------------
 1.  Provide widget URL as argument to widget rendering system in browser
 2.  Check widgets render URL
-3.  Provide user prefs to widgets render URL e.g. :
+3.  Provide user prefs to widgets render URL e.g. :  
 `%widget-render-url%&up_hello_pref=123&up_enum_pref=gray&up_boolean_pref=true`  
 4. Widgets contents should accept prefs and change
 

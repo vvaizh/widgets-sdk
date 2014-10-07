@@ -16,7 +16,7 @@ Shows different content according to supplied render type
 Usage
 ---------------------
 1.  Provide widget URL as argument to widget rendering system in browser
-2.  Provide render type as a parameter to vidget render URL e.g.
+2.  Provide render type as a parameter to vidget render URL e.g.  
 `%widget-render-url%&renderType=iframe`      
 `%widget-render-url%&renderType=inline`    
 3. Different content should be displayed
