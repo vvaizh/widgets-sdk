@@ -16,7 +16,9 @@ Displays log messages in browser developers tools console
 Usage
 ---------------------
 1.  Provide widget URL as argument to widget rendering system in browser
-2.  Sample one log and one error messages should appear in console
+2.  Open browser developer tools console
+3.  Refresh page
+4.  Sample one log and one error messages should appear in console
 
 Path to widget
 ---------------------
