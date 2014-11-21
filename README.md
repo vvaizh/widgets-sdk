@@ -17,4 +17,4 @@ General troubleshooting
 Important notice
 ----------------
 Check for individual readme provided for each widget in its directory
-For additional info and step-by-step instructions visit <https://rooxteam.jira.com/wiki/display/YW/Widgets+Best+Practices>
+For additional info and step-by-step instructions visit <https://rooxteam.jira.com/wiki/display/WMS/Widget+Best+Practices>
