@@ -21,7 +21,7 @@ Usage
 
 Path to widget
 ---------------------
-`src/main/webapp/SwitchWidget.xml`
+`src/main/webapp/geo-services.xml`
 
 Troubleshooting
 ---------------------
