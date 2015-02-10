@@ -12,9 +12,9 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>war</packaging>
     <groupId>com.rooxteam.widgets</groupId>
-    <artifactId>switch-widget</artifactId>
-    <version>3.0-SNAPSHOT</version>
-    <name>Widgets : switch-widget</name>
+    <artifactId>geo-services</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>Widgets : geo-services Widget</name>
     <description>
         Builds widget for deployment in CM-container and shindig.
         Maven will product three artifacts:
@@ -33,7 +33,7 @@
             <plugin>
                 <groupId>com.rooxteam.wms.sdk</groupId>
                 <artifactId>opensocial-maven-plugin</artifactId>
-                <version>1.19-29</version>
+                <version>1.19-31</version>
                 <executions>
                     <execution>
                         <id>production</id>
@@ -48,13 +48,23 @@
                                 <munge>true</munge>
                             </script>
                             <stylesheet>
-                                <inline>true</inline>
+                                
+								<inline>false</inline>
                                 <minify>true</minify>
                             </stylesheet>
                             <img>
                                 <inline>true</inline>
                             </img>
                             <targetDir>target/webapp/</targetDir>
+                            <template>
+                                <compile>true</compile>
+                            </template>
+                            <locale>
+                                <compile>true</compile>
+                            </locale>
+                            <lessCss>
+                                <sourceMap>false</sourceMap>
+                            </lessCss>
                         </configuration>
                     </execution>
                     <execution>
@@ -76,28 +86,39 @@
                             <img>
                                 <inline>false</inline>
                             </img>
+                            <template>
+                                <compile>true</compile>
+                            </template>
+                            <locale>
+                                <compile>true</compile>
+                            </locale>
+                            <lessCss>
+                                <sourceMap>true</sourceMap>
+                            </lessCss>
                             <targetDir>target/webapp-dev/</targetDir>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
             <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <configuration>
-                    <descriptors>
-                        <descriptor>src/main/assembly/cm.xml</descriptor>
-                        <descriptor>src/main/assembly/cm-dev.xml</descriptor>
-                    </descriptors>
-                </configuration>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.5</version>
                 <executions>
                     <execution>
-                        <id>make-assembly</id>
-                        <!-- this is used for inheritance merges -->
-                        <phase>package</phase>
-                        <!-- bind to the packaging phase -->
+                        <phase>initialize</phase>
                         <goals>
-                            <goal>single</goal>
+                            <goal>copy-resources</goal>
                         </goals>
+                        <configuration>
+                            <outputDirectory>${basedir}/target</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/preprocess</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
