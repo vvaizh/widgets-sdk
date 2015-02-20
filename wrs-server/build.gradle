@@ -21,7 +21,7 @@ buildscript {
         mavenLocal()
     }
     dependencies {
-        classpath 'com.rooxteam:gradle-wrs-plugin:25.12.+'
+        classpath "com.rooxteam:gradle-wrs-plugin:${gradleWrsPluginVersion}"
     }
 }
 
