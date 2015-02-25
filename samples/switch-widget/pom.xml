@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.rooxteam.corporate</groupId>
         <artifactId>corporate-pom</artifactId>
-        <version>11</version>
+        <version>27.2</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -33,7 +33,7 @@
             <plugin>
                 <groupId>com.rooxteam.wms.sdk</groupId>
                 <artifactId>opensocial-maven-plugin</artifactId>
-                <version>1.19-29</version>
+                <version>1.19-32</version>
                 <executions>
                     <execution>
                         <id>production</id>
