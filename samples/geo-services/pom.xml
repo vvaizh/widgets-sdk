@@ -207,6 +207,11 @@
             <name>roox-releases</name>
             <url>http://nexus.rooxintra.net/content/repositories/releases</url>
         </repository>
+        <repository>
+            <id>roox-snapshots</id>
+            <name>roox-snapshots</name>
+            <url>http://nexus.rooxintra.net/content/repositories/snapshots</url>
+        </repository>
     </repositories>
 
 </project>
