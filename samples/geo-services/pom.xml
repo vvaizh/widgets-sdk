@@ -208,10 +208,56 @@
             <url>http://repo.rooxteam.com/customers/content/repositories/roox.releases</url>
         </repository>
         <repository>
+            <id>roox-public</id>
+            <name>roox-public</name>
+            <url>http://repo.rooxteam.com/customers/content/groups/public</url>
+        </repository>
+        <repository>
             <id>roox-snapshots</id>
             <name>roox-snapshots</name>
-            <url>http://nexus.rooxintra.net/content/repositories/snapshots</url>
+            <url>http://repo.rooxteam.com/customers/content/repositories/roox.snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
         </repository>
     </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>roox-releases</id>
+            <name>roox-releases</name>
+            <url>http://repo.rooxteam.com/customers/content/repositories/roox.releases</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>roox-snapshots</id>
+            <name>roox-snapshots</name>
+            <url>http://repo.rooxteam.com/customers/content/repositories/roox.snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>roox-public</id>
+            <name>roox-public</name>
+            <url>http://repo.rooxteam.com/customers/content/groups/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
 </project>
