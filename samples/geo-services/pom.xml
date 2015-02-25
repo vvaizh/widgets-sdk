@@ -205,7 +205,7 @@
         <repository>
             <id>roox-releases</id>
             <name>roox-releases</name>
-            <url>http://nexus.rooxintra.net/content/repositories/releases</url>
+            <url>http://repo.rooxteam.com/customers/content/repositories/roox.releases</url>
         </repository>
         <repository>
             <id>roox-snapshots</id>
