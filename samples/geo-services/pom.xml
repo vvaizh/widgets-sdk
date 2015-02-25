@@ -6,14 +6,14 @@
     <parent>
         <groupId>com.rooxteam.corporate</groupId>
         <artifactId>corporate-pom</artifactId>
-        <version>11</version>
+        <version>27.2</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <packaging>war</packaging>
     <groupId>com.rooxteam.widgets</groupId>
     <artifactId>geo-services</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0-${BUILD_NUMBER}</version>
     <name>Widgets : geo-services Widget</name>
     <description>
         Builds widget for deployment in CM-container and shindig.
@@ -33,7 +33,7 @@
             <plugin>
                 <groupId>com.rooxteam.wms.sdk</groupId>
                 <artifactId>opensocial-maven-plugin</artifactId>
-                <version>1.19-31</version>
+                <version>1.19-32</version>
                 <executions>
                     <execution>
                         <id>production</id>
@@ -97,6 +97,26 @@
                             </lessCss>
                             <targetDir>target/webapp-dev/</targetDir>
                         </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <descriptors>
+                        <descriptor>src/main/assembly/cm.xml</descriptor>
+                        <descriptor>src/main/assembly/cm-dev.xml</descriptor>
+                    </descriptors>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <!-- this is used for inheritance merges -->
+                        <phase>package</phase>
+                        <!-- bind to the packaging phase -->
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
                     </execution>
                 </executions>
             </plugin>
@@ -185,8 +205,59 @@
         <repository>
             <id>roox-releases</id>
             <name>roox-releases</name>
-            <url>http://nexus.rooxintra.net/content/repositories/releases</url>
+            <url>http://repo.rooxteam.com/customers/content/repositories/roox.releases</url>
+        </repository>
+        <repository>
+            <id>roox-public</id>
+            <name>roox-public</name>
+            <url>http://repo.rooxteam.com/customers/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>roox-snapshots</id>
+            <name>roox-snapshots</name>
+            <url>http://repo.rooxteam.com/customers/content/repositories/roox.snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
         </repository>
     </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>roox-releases</id>
+            <name>roox-releases</name>
+            <url>http://repo.rooxteam.com/customers/content/repositories/roox.releases</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>roox-snapshots</id>
+            <name>roox-snapshots</name>
+            <url>http://repo.rooxteam.com/customers/content/repositories/roox.snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>roox-public</id>
+            <name>roox-public</name>
+            <url>http://repo.rooxteam.com/customers/content/groups/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
 </project>
