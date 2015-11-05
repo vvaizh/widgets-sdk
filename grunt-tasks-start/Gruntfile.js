@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (grunt) {
-    var TASK_FOLDER = 'node_modules/roox-grunt-tasks',
+    var TASK_FOLDER = 'node_modules/rx-grunt-tasks',
         _ = grunt.util._.extend,
         // utiltity function -
         loadConfig = function (path) {
@@ -15,7 +15,7 @@ module.exports = function (grunt) {
             return object;
         };
     // Load all grunt tasks
-    require('load-grunt-tasks')(grunt);
+    require('load-grunt-tasks')(grunt, {config: TASK_FOLDER+'/package'});
     // Show elapsed time at the end
     require('time-grunt')(grunt);
     // load tasks from folder
