@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Module>
+   <Require feature="pubsub"/>
    <ModulePrefs author="Some Company" author_email="person.some@company.ru" width="100%" height="100%" title="HelloWorld" version="1.0">
    </ModulePrefs>
    <Content content-type="text/html" type="html">
@@ -8,11 +9,24 @@
         <h2>Hello, world!</h2>
         <p>It's example</p>
 <button onclick="alert('секретное значение: ' + $('input#secret-field').val())">Показать секретное значение виджета</button>
+<button onclick="to_page()">пнуть окружающую страницу из виджета</button>
 <input type="hidden" value="secret value" id="secret-field" />
         <script language="javascript" type="text/javascript">
               gadgets.util.registerOnLoadHandler(function(){
                    alert('Hello, world!');
               });
+
+on_from_page= function(source,data)
+{
+   alert('ай яй яй пнули в виджет source="' + source + '", data="' + date + '"');
+   console.log(data);
+}
+
+to_page= function()
+{
+   gadgets.pubsub.publish('back',{a:1});
+}
+
         </script>
        ]]>
    </Content>
