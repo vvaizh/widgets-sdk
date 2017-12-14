@@ -7,6 +7,7 @@
         <style> h2 { color: #EDB200; } </style>
         <h2>Hello, world!</h2>
         <p>It's example</p>
+<button onclick="alert('секретное значение: ' + $('input#secret-field').val())">Показать секретное значение виджета</button>
 <input type="hidden" value="secret value" id="secret-field" />
         <script language="javascript" type="text/javascript">
               gadgets.util.registerOnLoadHandler(function(){
