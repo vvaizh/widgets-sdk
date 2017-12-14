@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Module>
-   <ModulePrefs author="Some Company" author_email="person.some@company.ru" width="100%" height="100%" title="HelloWorld" version="1.0">
+   <ModulePrefs author="Some Company" author_email="person.some@company.ru" width="100%" height="200px" title="HelloWorld" version="1.0">
       <Require feature="pubsub"/>
    </ModulePrefs>
    <Content content-type="text/html" type="html">
