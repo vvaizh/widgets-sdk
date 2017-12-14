@@ -13,26 +13,15 @@
 <input type="hidden" value="secret value" id="secret-field" />
         <script language="javascript" type="text/javascript">
               gadgets.util.registerOnLoadHandler(function(){
-gadgets.pubsub.subscribe('forward',on_from_page);
-gadgets.pubsub.subscribe('back',on_from_widget);
-                   alert('Hello, world!');
+                  alert('Hello, world!');
+                  window.addEventListener("message", function(e){
+                     alert('ай яй яй яй, пнули виджет из ' + e.origin + ' : ' 
+                           + JSON.stringify(e.data));
+                  });
               });
-
-on_from_page= function(source,data)
-{
-   alert('ай яй яй пнули в виджет source="' + source + '", data="' + data + '"');
-   console.log(data);
-};
-
-on_from_widget= function(source,data)
-{
-   alert('ай яй яй пнули в виджет из виджета source="' + source + '", data="' + JSON.stringify(data) + '"');
-   console.log(data);
-};
 
 to_page= function()
 {
-   gadgets.pubsub.publish('back',{a:1});
    window.parent.postMessage({a:1},'*');
 };
 
