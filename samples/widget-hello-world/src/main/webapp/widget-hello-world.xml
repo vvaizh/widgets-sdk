@@ -18,14 +18,14 @@
 
 on_from_page= function(source,data)
 {
-   alert('ай яй яй пнули в виджет source="' + source + '", data="' + date + '"');
+   alert('ай яй яй пнули в виджет source="' + source + '", data="' + data + '"');
    console.log(data);
-}
+};
 
 to_page= function()
 {
    gadgets.pubsub.publish('back',{a:1});
-}
+};
 
         </script>
        ]]>
