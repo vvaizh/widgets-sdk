@@ -33,6 +33,7 @@ on_from_widget= function(source,data)
 to_page= function()
 {
    gadgets.pubsub.publish('back',{a:1});
+   window.parent.postMessage({a:1},'*');
 };
 
         </script>
