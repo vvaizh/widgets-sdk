@@ -22,6 +22,8 @@ on_from_page= function(source,data)
    console.log(data);
 };
 
+gadgets.pubsub.subscribe('forward',on_from_page);
+
 to_page= function()
 {
    gadgets.pubsub.publish('back',{a:1});
