@@ -14,12 +14,19 @@
         <script language="javascript" type="text/javascript">
               gadgets.util.registerOnLoadHandler(function(){
 gadgets.pubsub.subscribe('forward',on_from_page);
+gadgets.pubsub.subscribe('back',on_from_widget);
                    alert('Hello, world!');
               });
 
 on_from_page= function(source,data)
 {
    alert('ай яй яй пнули в виджет source="' + source + '", data="' + data + '"');
+   console.log(data);
+};
+
+on_from_widget= function(source,data)
+{
+   alert('ай яй яй пнули в виджет из виджета source="' + source + '", data="' + data + '"');
    console.log(data);
 };
 
